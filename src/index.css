@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Secure File Storage Design System - Security-focused dark theme with trust-inspiring colors */
+@layer base {
+  :root {
+    /* Light professional theme */
+    --background: 0 0% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary: Professional indigo/blue */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Light slate */
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 222 47% 11%;
+
+    /* Muted: Subtle grays */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent: Vibrant blue */
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Warning: Amber */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.5rem;
+
+    /* Light professional gradients */
+    --gradient-secure: linear-gradient(135deg, hsl(221 83% 53%), hsl(213 94% 68%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%), hsl(15 75% 55%));
+    
+    /* Light shadows */
+    --shadow-secure: 0 10px 30px -10px hsl(221 83% 53% / 0.2);
+    --shadow-card: 0 2px 10px -2px hsl(222 47% 11% / 0.1);
+    --shadow-glow: 0 0 40px hsl(221 83% 53% / 0.15);
+
+    /* Smooth transitions */
+    --transition-secure: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.5s cubic-bezier(0.4, 0, 0.6, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 221 83% 53%;
+  }
+
+  .dark {
+    --background: 224 20% 12%;
+    --foreground: 210 40% 98%;
+
+    --card: 224 20% 15%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 224 20% 15%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary: Professional blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary: Dark gray */
+    --secondary: 217 20% 22%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted: Subtle grays */
+    --muted: 217 20% 22%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent: Bright blue */
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Warning: Amber */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 20% 25%;
+    --input: 217 20% 25%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Dark professional gradients */
+    --gradient-secure: linear-gradient(135deg, hsl(217 91% 60%), hsl(213 94% 68%));
+    --gradient-card: linear-gradient(145deg, hsl(224 20% 15%), hsl(217 20% 22%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 84.2% 60.2%), hsl(15 75% 55%));
+    
+    /* Dark shadows */
+    --shadow-secure: 0 10px 30px -10px hsl(217 91% 60% / 0.4);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.25);
+
+    /* Smooth transitions */
+    --transition-secure: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.5s cubic-bezier(0.4, 0, 0.6, 1);
+
+    --sidebar-background: 224 20% 12%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 217 20% 22%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 20% 25%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
