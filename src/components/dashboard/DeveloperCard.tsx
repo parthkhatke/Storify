@@ -12,7 +12,7 @@ const developers = [
   },
   {
     name: 'Parag Jhala',
-    role: 'Software Developer Test Engineer',
+    role: 'Software Development Test Engineer',
     expertise: 'API Testing, Security, Cloud Infrastructure',
     email: 'paragjhala18@gmail.com',
     linkedin: 'www.linkedin.com/in/paragjhala21'
@@ -32,7 +32,7 @@ export const DeveloperCard: React.FC = () => {
       <CardHeader>
         <CardTitle className="text-lg flex items-center gap-2">
           <Code className="h-5 w-5 text-primary" />
-          Developer
+          Developers
         </CardTitle>
         <CardDescription>Meet the team behind Storify</CardDescription>
       </CardHeader>
