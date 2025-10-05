@@ -18,7 +18,7 @@ const developers = [
     linkedin: 'www.linkedin.com/in/paragjhala21'
   },
   {
-    name: 'Palak Shadadpuri',
+    name: 'Palak Shahdadpuri',
     role: 'Frontend Developer',
     expertise: 'UI/UX, TypeScript, Component Design',
     email: 'Palakshahdadpuri2410@gmail.com',
